@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">F1</string>
+    <string name="email">Email</string>
     <string name="register">Register</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="f1_register">F1 Register</string>
-    <string name="email">Email</string>
 </resources>
