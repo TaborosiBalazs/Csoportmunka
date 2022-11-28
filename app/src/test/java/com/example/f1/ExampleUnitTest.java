@@ -1,4 +1,4 @@
-package com.example.csoportmunka;
+package com.example.f1;
 
 import org.junit.Test;
 

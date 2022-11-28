@@ -3,13 +3,12 @@ plugins {
 }
 
 android {
-    namespace 'com.example.csoportmunka'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.csoportmunka"
+        applicationId "com.example.f1"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
