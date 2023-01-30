@@ -19,7 +19,7 @@ public class RegisterUser
                 {
                     String[] field = { "email", "username", "password" };
                     String[] data = { user.getEmail(), user.getUsername(), user.getPassword() };
-                    PutData putData = new PutData("http://10.0.2.2/f1/signUp.php","POST", field, data);
+                    PutData putData = new PutData("http://10.0.14.10/f1/signUp.php","POST", field, data);
 
                     if(putData.startPut())
                     {

@@ -4,5 +4,12 @@
     <string name="register">Register</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="f1_register">F1 Register</string>
+    <string name="f1_register">Register</string>
+    <string name="maintitle">MainTitle</string>
+    <string name="login">Login</string>
+    <string name="login_title">Login</string>
+    <string name="BacktoMainBtn">Back</string>
+    <string name="LoginTitle">TextView</string>
+    <string name="LoggedInBtn">Login</string>
+    <string name="nameTextField">Name</string>
 </resources>
