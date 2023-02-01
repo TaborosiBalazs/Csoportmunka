@@ -14,9 +14,12 @@
         android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round">
 
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -31,7 +31,7 @@ public class Register extends AppCompatActivity
                         String.valueOf(emailEditText.getText()),
                         String.valueOf(usernameEditText.getText()),
                         String.valueOf(passwordEditText.getText()));
-                RegisterUser.putDataToDB(user);
+                RegisterUser.putDataToDB(user, getApplicationContext());
             }
         });
     }

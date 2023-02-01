@@ -17,16 +17,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        register = findViewById(R.id.button2);
+        login = findViewById(R.id.button);
 
-        register = findViewById(R.id.button);
-        login = findViewById(R.id.button2);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Register.class);
-                startActivity(intent);
-                finish();
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                getApplicationContext().startActivity(intent);
             }
         });
 
@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Login.class);
-                startActivity(intent);
-                finish();
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                getApplicationContext().startActivity(intent);
             }
         });
     }
