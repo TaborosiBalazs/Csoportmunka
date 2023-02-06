@@ -17,8 +17,12 @@
         <activity android:name=".Login" />
         <activity android:name=".Register" />
         <activity
+            android:name=".Menu"
+            />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
+
 
 
             <intent-filter>
