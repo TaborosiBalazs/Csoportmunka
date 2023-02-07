@@ -11,10 +11,9 @@ import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class LoginUser {
     protected void login(User user, Context context) {
-        if (!user.getEmail().equals("") && !user.getPassword().equals("")) {
+        if (!user.getUsername().equals("") && !user.getPassword().equals("")) {
             Handler handler = new Handler(Looper.getMainLooper());
             handler.post(new Runnable() {
-                @Override
                 public void run() {
                     String[] field = new String[2];
                     field[0] = "username";

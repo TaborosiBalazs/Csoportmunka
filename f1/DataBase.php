@@ -45,5 +45,19 @@ class DataBase
             return true;
         } else return false;
 	}
+
+    function logIn($table, $username, $password)
+    {
+        $username = $this->prepareData($username);
+        $password = $this->prepareData($password);
+        $this->sql = "SELECT * FROM " . $table . " WHERE username = '" . $username . "'";
+        $result = mysqli_query($this->connect, $this->sql);
+        if (mysqli_num_rows($result) > 0) {
+            $this->data = mysqli_fetch_assoc($result);
+            if (password_verify($password, $this->data['password'])) {
+                return true;
+            } else return false;
+        } else return false;
+    }
 }
 ?>
