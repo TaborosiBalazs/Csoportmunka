@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 import android.widget.Button;
+import android.content.Intent;
 import android.text.TextUtils;
 import android.widget.EditText;
 import androidx.annotation.NonNull;
@@ -62,7 +63,14 @@ public class MainActivity extends AppCompatActivity
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task)
                 {
-                    if (task.isSuccessful()) Toast.makeText(MainActivity.this, "LOGIN SUCCESSFULL", Toast.LENGTH_SHORT).show();
+                    if (task.isSuccessful())
+                    {
+                        Toast.makeText(MainActivity.this, "LOGIN SUCCESSFULL", Toast.LENGTH_SHORT).show();
+
+                        Intent welcomePageIntent = new Intent(MainActivity.this, WelcomePageActivity.class);
+                        startActivity(welcomePageIntent);
+                        finish();
+                    }
                     else Toast.makeText(MainActivity.this, "AUTHENTICATION FAILED", Toast.LENGTH_SHORT).show();
                 }
             });
@@ -82,7 +90,14 @@ public class MainActivity extends AppCompatActivity
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task)
                 {
-                    if (task.isSuccessful()) Toast.makeText(MainActivity.this, "REGISTRATION SUCCESSFULL", Toast.LENGTH_SHORT).show();
+                    if (task.isSuccessful())
+                    {
+                        Toast.makeText(MainActivity.this, "REGISTRATION SUCCESSFULL", Toast.LENGTH_SHORT).show();
+
+                        Intent welcomePageIntent = new Intent(MainActivity.this, WelcomePageActivity.class);
+                        startActivity(welcomePageIntent);
+                        finish();
+                    }
                     else  Toast.makeText(MainActivity.this, "REGISTRATION FAILED", Toast.LENGTH_SHORT).show();
                 }
             });
