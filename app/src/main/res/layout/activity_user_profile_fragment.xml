@@ -1,72 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout
+    android:padding="16dp"
+    android:background="#202020"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="#202020"
-    android:padding="16dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
-        android:textColor="@color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="PROFILE"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <TextView
-        android:textColor="@color/white"
-        android:id="@+id/user_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:layout_marginTop="8dp" />
+        android:id="@+id/user_email"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <View
-        android:textColor="@color/white"
-        android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
         android:layout_gravity="center_horizontal"
         android:background="@android:color/darker_gray" />
 
     <EditText
-        android:id="@+id/old_password"
         android:textSize="18sp"
-        android:textColor="@color/white"
+        android:hint="Old Password"
+        android:id="@+id/old_password"
         android:textAlignment="center"
         android:textColorHint="#888888"
-        android:hint="Old Password"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
         android:inputType="textPassword"
         android:backgroundTint="#ffffff"
-        android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <EditText
-        android:id="@+id/new_password"
         android:textSize="18sp"
-        android:textColor="@color/white"
-        android:textAlignment="center"
         android:hint="New Password"
-        android:inputType="textPassword"
+        android:id="@+id/new_password"
+        android:textAlignment="center"
         android:textColorHint="#888888"
         android:backgroundTint="#ffffff"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
         android:layout_marginBottom="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/change_password_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Change Password"
         android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/change_password_button"
         android:backgroundTint="@android:color/holo_blue_dark"/>
-
-
 </LinearLayout >
