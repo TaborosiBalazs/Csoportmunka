@@ -2,6 +2,7 @@ package com.vp.f1;
 
 import java.util.List;
 import android.view.View;
+import android.content.Intent;
 import android.view.ViewGroup;
 import android.content.Context;
 import android.widget.TextView;
@@ -36,6 +37,23 @@ public class RacerAdapter extends RecyclerView.Adapter<RacerAdapter.RacerViewHol
         Racer racer = racers.get(position);
         holder.racerName.setText(racer.getName());
         Picasso.get().load(racer.getImg()).into(holder.racerImage);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(context, RacerDetailActivity.class);
+
+                intent.putExtra("racerName", racer.getName());
+                intent.putExtra("racerImage", racer.getImg());
+                intent.putExtra("racerTeam", racer.getTeam());
+                intent.putExtra("racerCountry", racer.getCountry());
+                intent.putExtra("racerDateOfBirth", racer.getDateOfBirth());
+
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

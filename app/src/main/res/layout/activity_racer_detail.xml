@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_dark"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:text="@string/back"
+        android:id="@+id/back_button"
+        android:textColor="@color/white"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/racer_detail_image"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:id="@+id/racer_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/racer_detail_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/racer_detail_country"  />
+
+    <TextView
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/racer_detail_dateOfBirth" />
+</LinearLayout>
