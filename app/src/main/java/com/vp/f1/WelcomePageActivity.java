@@ -61,6 +61,10 @@ public class WelcomePageActivity extends AppCompatActivity implements Navigation
 
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, userProfileFragment).commit();
                 break;
+
+            case R.id.nav_favorites:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FavoritesFragment()).commit();
+                break;
         }
 
         drawer.closeDrawer(GravityCompat.START);
